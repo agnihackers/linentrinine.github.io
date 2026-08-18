@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LINEN TRININE | Online Store Opening Soon</title>
-
+    <title>LINEN TRININE | Opening Soon</title>
+    <!-- Premium Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
@@ -137,39 +137,51 @@
             font-weight: 300;
         }
 
-        /* Social & Location Links */
+        /* SOCIAL MEDIA & LOCATION ICONS */
         .social-links {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
+            gap: 14px;
             margin-top: 30px;
+            flex-wrap: wrap;
         }
 
-        .social-links a {
-            display: inline-flex;
+        .social-link {
+            width: 48px;
+            height: 48px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.04);
+            display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 120px;
-            padding: 11px 16px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            background: rgba(255, 255, 255, 0.03);
-            color: var(--accent-silver);
+            border-radius: 50%;
+            color: #ffffff;
             text-decoration: none;
-            font-size: 0.65rem;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
             transition: all 0.3s ease;
         }
 
-        .social-links a:hover {
-            border-color: var(--amber-gold);
-            color: var(--amber-gold);
-            background: rgba(229, 169, 60, 0.06);
-            transform: translateY(-2px);
+        .social-link:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-silver);
+            background: rgba(255, 255, 255, 0.1);
         }
 
+        .social-link svg {
+            width: 21px;
+            height: 21px;
+            fill: currentColor;
+        }
+
+        .social-label {
+            margin-top: 15px;
+            font-size: 0.65rem;
+            color: #666;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* WhatsApp Floating Icon */
         .wa-float {
             position: fixed;
             bottom: 30px;
@@ -252,10 +264,13 @@
                 width: 90%;
             }
 
-            .social-links a {
-                min-width: 105px;
-                padding: 10px 12px;
-                font-size: 0.58rem;
+            .social-links {
+                gap: 10px;
+            }
+
+            .social-link {
+                width: 44px;
+                height: 44px;
             }
         }
 
@@ -272,6 +287,7 @@
     <div class="main-wrapper">
 
         <div class="brand-section">
+
             <img
                 src="https://raw.githubusercontent.com/agnihackers/linentrinine.github.io/refs/heads/main/EMBLEMLOGO.png"
                 alt="LINEN TRININE"
@@ -284,6 +300,7 @@
                 <span class="status-dot"></span>
                 Online Store Coming Soon
             </div>
+
         </div>
 
         <div class="announcement-card">
@@ -295,37 +312,76 @@
             </p>
 
             <p class="short-note">
-                We’re excited to welcome you in-store and bring you the same premium experience online soon.
-                Stay connected with us for the latest updates, announcements, and the official launch of our online store.
+                Thank you for being a part of our journey. Our physical store in Chalakudy is now open, and we’re excited to welcome you in-store.
             </p>
 
-            <!-- Official Brand Links -->
+            <p class="short-note">
+                Our online store is coming soon. Stay connected with us for the latest updates, announcements, and the official launch.
+            </p>
+
+            <!-- SOCIAL MEDIA & STORE LOCATION -->
             <div class="social-links">
 
-                <a href="https://www.youtube.com/@linentrinine"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    YouTube
+                <!-- YouTube -->
+                <a
+                    href="https://www.youtube.com/@linentrinine"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube Channel"
+                    title="YouTube"
+                >
+                    <svg viewBox="0 0 576 512">
+                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.321-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+                    </svg>
                 </a>
 
-                <a href="https://www.instagram.com/linentrinineofficial"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Instagram
+                <!-- Instagram -->
+                <a
+                    href="https://www.instagram.com/linentrinineofficial"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram Page"
+                    title="Instagram"
+                >
+                    <svg viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zM398.8 80C362.7 43.9 313.6 24 261.7 24H186.3C134.4 24 85.3 43.9 49.2 80S0 165.1 0 217v77.9c0 51.9 19.9 101 56 137.1s85.1 56 137.1 56h75.4c51.9 0 101-19.9 137.1-56s56-85.1 56-137.1V217c0-51.9-19.9-101-56-137zM398.8 294.9c0 36.5-14.1 70.8-39.8 96.5s-60 39.8-96.5 39.8h-75.4c-36.5 0-70.8-14.1-96.5-39.8S50.8 331.4 50.8 294.9V217c0-36.5 14.1-70.8 39.8-96.5s60-39.8 96.5-39.8h75.4c36.5 0 70.8 14.1 96.5 39.8s39.8 60 39.8 96.5v77.9z"/>
+                    </svg>
                 </a>
 
-                <a href="https://www.facebook.com/linentrinineofficial"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Facebook
+                <!-- Facebook -->
+                <a
+                    href="https://www.facebook.com/linentrinineofficial"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook Page"
+                    title="Facebook"
+                >
+                    <svg viewBox="0 0 320 512">
+                        <path d="M279.14 288l14.22-92.66h-88.91V127.2c0-25.35 12.42-50.06 52.24-50.06H296V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                    </svg>
                 </a>
 
-                <a href="https://maps.app.goo.gl/pr5frRkFsxcjYFX58"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Store Location
+                <!-- Google Maps / Location -->
+                <a
+                    href="https://maps.app.goo.gl/pr5frRkFsxcjYFX58"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Chalakudy Store Location"
+                    title="Store Location"
+                >
+                    <svg viewBox="0 0 384 512">
+                        <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 86.015 86.015 0 192 0s192 86.015 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.788-29.929 13.788-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/>
+                    </svg>
                 </a>
 
+            </div>
+
+            <div class="social-label">
+                Connect With LINEN TRININE
             </div>
 
         </div>
@@ -333,16 +389,16 @@
     </div>
 
     <!-- WhatsApp Support -->
-    <a href="https://wa.me/919633217999"
-       class="wa-float"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="WhatsApp Support">
-
+    <a
+        href="https://wa.me/919633217999"
+        class="wa-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp Support"
+    >
         <svg viewBox="0 0 448 512">
             <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.3 2.6-2.6 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.5 5.5-9.2 1.9-3.7 1-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
         </svg>
-
     </a>
 
     <!-- ADVANCED SECURITY SCRIPTS -->
@@ -363,7 +419,7 @@
             ) return false;
 
             if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
-        };
+        }
 
         setInterval(function() {
             const threshold = 160;
